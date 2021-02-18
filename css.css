@@ -19,3 +19,9 @@ body {
     flex-wrap: wrap;
     align-items: center;
 }
+
+.card-div {
+    position: relative;
+    width: 100%;
+    float: right;
+}

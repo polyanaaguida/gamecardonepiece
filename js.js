@@ -17,6 +17,7 @@ function game(i) {
 
     app.style.display = "grid";
     // app.style.flexDirection = "column";
+    app.style.float = "right";
 
     // header.style.margin = "10px";
     header.style.color = "black";
