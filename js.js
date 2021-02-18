@@ -13,30 +13,19 @@ function game(i) {
     const atkAttribute = document.createElement("div");
     const intAttribute = document.createElement("div");
 
-    const cards = [{
-        id: 1,
-        type: "A",
-        name: "MONKEY D LUFFY",
-        akuma: true,
-        determination: 3,
-        attack: 1,
-        intellect: 2,
-        img: "/assets/luffy.jpg",
-    }, ]
-
     const cardObj = cards[i];
 
-    app.style.display = "flex";
-    app.style.flexDirection = "column";
+    app.style.display = "grid";
+    // app.style.flexDirection = "column";
 
-    header.style.margin = "10px";
+    // header.style.margin = "10px";
     header.style.color = "black";
 
     pageTitle.style.fontFamily = "fantasy";
 
     card.style.alignContent = "center";
     card.style.border = "2px solid black";
-    card.style.backgroundColor = "rgb(181, 183, 184)";
+    card.style.backgroundColor = "rgb(255, 143, 5)";
     card.style.borderRadius = "20px";
     card.style.width = "63mm";
     card.style.height = "88mm";
@@ -84,13 +73,12 @@ function game(i) {
     cardType.style.padding = "3px 3px 3px 3px";
     cardType.style.color = "black";
     cardType.style.border = "2px solid black";
-    cardType.style.backgroundColor = "rgb(255, 143, 5)";
+    cardType.style.backgroundColor = "rgb(5, 172, 255)";
     cardType.style.borderRadius = "30px";
     cardType.style.fontSize = "20px";
     cardType.style.fontFamily = "fantasy";
 
     cardImg.setAttribute("src", cardObj.img);
-    // cardImg.style.display = "flex";
     cardImg.style.justifyContent = "center";
     cardImg.style.alignItems = "center";
     cardImg.style.marginLeft = "auto";
@@ -131,7 +119,7 @@ function game(i) {
     intAttribute.style.borderRadius = "30px";
     intAttribute.style.position = "relative";
 
-    document.body.appendChild(app);
+    document.getElementById("cartinha").appendChild(app);
     app.appendChild(header);
     app.appendChild(pageTitle);
     app.appendChild(card);
@@ -147,5 +135,6 @@ function game(i) {
 
 
 }
-
-game(0)
+for (let i = 0; i < cards.length; i++) {
+    game(i)
+}

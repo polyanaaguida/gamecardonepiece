@@ -1,130 +1,21 @@
-/* body {
-    margin: 0;
+body, html {
+    background-image: url("/assets/map.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    display: flex;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0, 5em;
-}
-
-.app {
-    display: flex;
-    flex-direction: column;
-}
-
-.header {
-    margin-left: 5px;
-    color: black;
-
-}
-
-.card {
-    align-content: center;
-    border: 2px solid black;
-    background-color: rgb(181, 183, 184);
-    border-radius: 20px;
-    width: 63mm;
-    height: 88mm;
-    margin: 50px;
-    position: relative;
-    top: 0;
-    transition: top ease 0.5s;
-    box-shadow: 3px 3px 10px black;
-}
-
-.card:hover {
-    top: -5px;
-}
-
-.img-card {
-    display: flex;
-    justify-content: center;
+    /* background-attachment: fixed; */
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    position: static;
-    padding-top: 20px;
 }
-
-.title-card {
-    display: block;
-    height: 40px;
-    padding: 5px 5px 0 5px;
-}
-
-.akuma-icon-card {
-    position: relative;
-    float: left;
-    height: 30px;
-}
-
-.txt-title-card {
-    display: inline;
-    font-size: 25px;
-    font-family: fantasy;
-    color: black;
-}
-
-.type-card {
-    position: relative;
-    text-align: center;
-    float: right;
-    width: 20px;
-    padding: 3px 3px 3px 3px;
-    color: black;
-    border: 2px solid black;
-    background-color: rgb(255, 143, 5);
-    border-radius: 30px;
-    font-size: 20px;
-    font-family: fantasy;
-}
-
-.atributes {
-    margin: 30px 2px 0px 2px;
-    display: block;
-    columns: 3;
-    text-align: center;
-    position: relative;
-    top: 0;
-    transition: top ease 0.5s;
-    font-family: fantasy;
-}
-
-.strength-atribute-card {
-    padding: 10px 15px 10px 15px;
-    color: black;
-    border: 2px solid black;
-    background-color: rgb(242, 74, 47);
-    border-radius: 30px;
-    position: relative;
-}
-
-.strength-atribute-card:hover {
-    opacity: 80%;
-    cursor: pointer;
-}
-
-.determination-atribute-card {
-    padding: 10px 15px 10px 15px;
-    color: black;
-    border: 2px solid black;
-    background-color: rgb(15, 199, 15);
-    border-radius: 30px;
-    position: relative;
-}
-
-.determination-atribute-card:hover {
-    opacity: 80%;
-    cursor: pointer;
-}
-
-.intelect-atribute-card {
-    padding: 10px 15px 10px 15px;
-    color: black;
-    border: 2px solid black;
-    background-color: rgb(243, 229, 31);
-    border-radius: 30px;
-    position: relative;
-}
-
-.intelect-atribute-card:hover {
-    opacity: 80%;
-    cursor: pointer;
-} */
