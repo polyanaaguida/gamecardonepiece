@@ -2,7 +2,7 @@ const cards = [
     {
         id: 1,
         type: "A", 
-        name: "MONKEY D LUFFY",
+        name: "LUFFY",
         akuma: true,
         determination: 10,
         attack: 8,
@@ -12,7 +12,7 @@ const cards = [
     {
         id: 2,
         type: "A", 
-        name: "RONOROA ZORO",
+        name: "ZORO",
         akuma: false,
         determination: 8,
         attack: 10,
@@ -22,7 +22,7 @@ const cards = [
     {
         id: 3,
         type: "B", 
-        name: "TONY TONY CHOPPER",
+        name: "CHOPPER",
         akuma: true,
         determination: 7,
         attack: 7,
@@ -32,7 +32,7 @@ const cards = [
     {
         id: 4,
         type: "A", 
-        name: "NICO ROBIN",
+        name: "ROBIN",
         akuma: true,
         determination: 6,
         attack: 10,

@@ -16,10 +16,8 @@ function game(i) {
     const cardObj = cards[i];
 
     app.style.display = "grid";
-    // app.style.flexDirection = "column";
-    app.style.float = "right";
+    app.style.float = "left";
 
-    // header.style.margin = "10px";
     header.style.color = "black";
 
     pageTitle.style.fontFamily = "fantasy";
@@ -30,7 +28,7 @@ function game(i) {
     card.style.borderRadius = "20px";
     card.style.width = "63mm";
     card.style.height = "88mm";
-    card.style.margin = "50px";
+    card.style.margin = "25px";
     card.style.position = "relative";
     card.style.top = "0";
     card.style.transition = "top ease 0.5s";
@@ -43,56 +41,59 @@ function game(i) {
         this.style.top = "0";
     }
 
+ 
+    cardTitle.style.margin = "5px 2px 0px 2px";
     cardTitle.style.display = "block";
+    cardTitle.style.columns = "3";
     cardTitle.style.height = "40px";
-    cardTitle.style.padding = "5px 5px 0 5px";
 
     if (cardObj.akuma == true) {
         cardIcon.setAttribute("src", "/assets/raspberry.png");
         cardIcon.style.position = "relative";
-        cardIcon.style.float = "left";
-        cardIcon.style.height = "30px";
+        cardIcon.style.height = "35px";
+   
     } else {
         cardIcon.setAttribute("src", "/assets/raspberry.png");
-        cardIcon.style.display = "none";
+        cardIcon.style.opacity = "0%";
         cardIcon.style.position = "relative";
-        cardIcon.style.float = "left";
-        cardIcon.style.height = "30px";
+        cardIcon.style.height = "35px";
+
     };
 
     cardName.innerHTML = cardObj.name;
-    cardName.style.display = "inline";
-    cardName.style.fontSize = "25px";
+    cardName.style.display = "flex";
+    cardName.style.fontSize = "28px";
     cardName.style.fontFamily = "fantasy";
     cardName.style.color = "black";
+    cardName.style.display = "relative";
 
     cardType.innerHTML = cardObj.type;
-    cardType.style.position = "relative";
+    cardType.style.position = "static";
     cardType.style.textAlign = "center";
     cardType.style.float = "right";
-    cardType.style.width = "20px";
-    cardType.style.padding = "3px 3px 3px 3px";
+    cardType.style.width = "28px";
     cardType.style.color = "black";
     cardType.style.border = "2px solid black";
     cardType.style.backgroundColor = "rgb(5, 172, 255)";
     cardType.style.borderRadius = "30px";
-    cardType.style.fontSize = "20px";
+    cardType.style.fontSize = "25px";
     cardType.style.fontFamily = "fantasy";
+    cardType.style.display = "relative";
 
     cardImg.setAttribute("src", cardObj.img);
     cardImg.style.justifyContent = "center";
     cardImg.style.alignItems = "center";
-    cardImg.style.marginLeft = "auto";
-    cardImg.style.marginRight = "auto";
-    cardImg.style.position = "static";
-    cardImg.style.paddingTop = "20px";
-    cardImg.style.width = "100%";
 
-    attributes.style.margin = "30px 2px 0px 2px";
+    cardImg.style.position = "static";
+    cardImg.style.marginTop = "20px";
+    cardImg.style.width = "100%";
+    cardImg.style.height = "40mm";
+
+    attributes.style.margin = "10px 2px 0px 2px";
     attributes.style.display = "block";
+    attributes.style.position = "relative";
     attributes.style.columns = "3";
     attributes.style.textAlign = "center";
-    attributes.style.position = "relative";
     attributes.style.top = "0";
     attributes.style.fontFamily = "fantasy";
 
