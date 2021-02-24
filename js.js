@@ -1,4 +1,4 @@
-    function game(i) {
+    function game(cardObj) {
         const app = document.createElement("div");
         const header = document.createElement("div");
         const pageTitle = document.createElement("h1");
@@ -13,8 +13,6 @@
         const atkAttribute = document.createElement("div");
         const intAttribute = document.createElement("div");
         const buy = document.createElement("div");
-
-        const cardObj = cards[i];
 
         app.style.display = "grid";
         app.style.float = "left";
@@ -147,15 +145,13 @@
         attributes.appendChild(intAttribute);
         app.appendChild(buy);
         
-    }
-    for (let i = 0; i < cards.length; i++) {
-        game(i)
+        return app;
     }
 
     function myFunction() {
         const text = document.getElementById("search").value;
         cards.forEach((card,index) => {
-            const cartona = cards[index];
+            const cartona = App.elements.cards[index];
             console.log(index);
             if(card.name.toLowerCase().includes(text.toLowerCase())){
                 cartona.classList.remove("hide")
