@@ -12,11 +12,12 @@
         const detAttribute = document.createElement("div");
         const atkAttribute = document.createElement("div");
         const intAttribute = document.createElement("div");
-        const buy = document.createElement("div");
+        const buy = document.createElement("button");
 
         app.style.display = "grid";
         app.style.float = "left";
         app.setAttribute("id", cardObj.id);
+        app.style.margin = "25px";
 
         header.style.color = "black";
 
@@ -28,7 +29,6 @@
         card.style.borderRadius = "20px";
         card.style.width = "63mm";
         card.style.height = "88mm";
-        card.style.margin = "25px";
         card.style.position = "relative";
         card.style.top = "0";
         card.style.transition = "top ease 0.5s";
@@ -127,8 +127,15 @@
         buy.style.border = "2px solid black";
         buy.style.backgroundColor = "white";
         buy.style.borderRadius = "30px";
-        buy.style.position = "relative";
+        buy.style.display = "grid";
         buy.style.textAlign = "center";
+        buy.style.cursor = "pointer";
+        buy.style.fontFamily = "fantasy";
+        buy.style.fontSize = "20px";
+        buy.style.width = "63mm";
+        buy.style.marginTop = "20px";
+        buy.style.boxShadow = "3px 3px 10px black";
+        
 
         document.getElementById("cartinha").appendChild(app);
         app.appendChild(header);
