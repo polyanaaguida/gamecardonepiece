@@ -135,7 +135,21 @@
         buy.style.width = "63mm";
         buy.style.marginTop = "20px";
         buy.style.boxShadow = "3px 3px 10px black";
-        
+        buy.style.outline = "none";
+        buy.onclick = function () {
+            if (buy.innerHTML == "BUY") {
+                this.innerHTML = "SELL";
+                this.style.color = "white";
+                this.style.backgroundColor = "black";
+                card.style.filter = "grayscale(100%)";
+            } else {
+                this.innerHTML = "BUY";
+                this.style.color = "black";
+                this.style.backgroundColor = "white";
+                card.style.filter = "grayscale(0%)";
+
+            }
+            };
 
         document.getElementById("cartinha").appendChild(app);
         app.appendChild(header);
@@ -153,7 +167,10 @@
         app.appendChild(buy);
         
         return app;
+    
     }
+    
+
 
     function myFunction() {
         const text = document.getElementById("search").value;

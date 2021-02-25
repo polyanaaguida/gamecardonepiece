@@ -6,7 +6,7 @@ let App = {
         cards: cards,
     },
     elements: {
-        
+    
     }
 };
 App.init();
